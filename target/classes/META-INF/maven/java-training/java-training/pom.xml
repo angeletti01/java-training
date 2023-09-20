@@ -3,4 +3,7 @@
   <groupId>java-training</groupId>
   <artifactId>java-training</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.release>11</maven.compiler.release>
+</properties>
 </project>
