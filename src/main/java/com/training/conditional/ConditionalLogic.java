@@ -301,8 +301,49 @@ public class ConditionalLogic {
 	public void switchDaysInMonth() {
 		Scanner s = new Scanner(System.in);
 		int month = 0;
+		int numDays = 0;
+		int year = 0;
 		final int JAN = 1, FEB = 2, MAR = 3, APR = 4, MAY = 5, JUNE = 6, 
 				JULY = 7, AUG = 8, SEP = 9, OCT = 10, NOV = 11, DEC = 12;
+		try {
+		System.out.println("Please enter a number between 1 and 12");
+		month = s.nextInt();
+		while(month < 0 | month > 12) {
+			System.out.println("Please enter valid number");
+			month = s.nextInt();
+		}
+		switch(month) {
+		case JAN, MAR, MAY, JULY, AUG, OCT, DEC:
+			numDays = 31;
+		break;
+		
+		case APR, JUNE, SEP, NOV:
+			numDays = 30;
+		break;
+		case FEB:
+			System.out.println("Please enter a year");
+			year = s.nextInt();
+			if(year % 400 == 0) {
+				numDays = 29;
+			}
+			else if(year % 4 == 0 & year % 100 > 0 ) {
+				numDays = 29;
+			}
+			else {
+				numDays = 28;
+			}
+			break;
+		default:
+			System.out.println("Invalid entry....");
+		}
+		}
+		
+		catch(Exception e) {
+			e.printStackTrace();
+			System.out.println("Invalid entry.....");
+			switchDaysInMonth();
+		}
+		System.out.println("Month: "+ month +" Number of Days: " + numDays);
 	}
 	
 	public static void main(String args[]) {
@@ -310,7 +351,9 @@ public class ConditionalLogic {
 		Scanner s = new Scanner(System.in);
 		int x = 0;
 		int y = 0;
-		c.ifTemperature();
+		
+		c.switchDaysInMonth();
+		//c.ifTemperature();
 		//c.switchMathOperation();
 		//c.ifGrade();
 		//c.ifMonth();		
