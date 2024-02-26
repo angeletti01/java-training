@@ -1,8 +1,13 @@
+/**
+ * Author: Rico-Kali Hayes
+ * Date: 02/26/2024
+ * Description: Practice code
+ * 
+ * */
 package com.training.conditional;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class ConditionalLogic {
 
@@ -18,8 +23,7 @@ public class ConditionalLogic {
 		System.out.println("The value of y is "+ y);
 		System.out.println("The value of --y is "+ --y);
 		System.out.println("The value of y-- is "+ y--);
-		System.out.println("The value of y is "+ y);
-		
+		System.out.println("The value of y is "+ y);		
 	}
 	
 	public void booleanLogicShortCircuitOps() {
@@ -362,7 +366,7 @@ public class ConditionalLogic {
 		//c.booleanBitwiseOps();
 		//c.compareStrings();
 		
-	/* admitToFilm() dialog */	
+	/***** admitToFilm() dialog *****/	
 	/* System.out.println("Enter age to view film: ");
 		x = s.nextInt();		
 		System.out.println("Enter your age: ");
