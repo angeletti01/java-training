@@ -1,3 +1,8 @@
+/**
+ * @author Rico-Kali Hayes
+ * Date: 02/27/2024
+ * Description: Simple Java for-loop training.
+ * */
 package com.training.forloop;
 
 import java.util.ArrayList;
