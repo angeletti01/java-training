@@ -14,7 +14,8 @@ public class ForExercises {
 
 		// f.forLargestSmallest();
 		// f.forHistogram();
-		f.forAverage();
+		// f.forAverage();
+		f.twelveDaysOfChristmas();
 	}
 
 	public void forLargestSmallest() {
@@ -122,5 +123,85 @@ public class ForExercises {
 	}
 
 	public void twelveDaysOfChristmas() {
+		List<String> yellow = new ArrayList<>();
+		List<String> blue = new ArrayList<>();
+		yellow.add("first");
+		yellow.add("second");
+		yellow.add("third");
+		yellow.add("fourth");
+		yellow.add("fifth");
+		yellow.add("sixth");
+		yellow.add("seventh");
+		yellow.add("eight");
+		yellow.add("ninth");
+		yellow.add("tenth");
+		yellow.add("eleventh");
+		yellow.add("twelfth");
+		blue.add("A partridge in a pear tree.");
+		blue.add("Two turtle doves, and \n A partridge in a pear tree.");
+		blue.add("Three French hens, \n Two turtle doves, and \n A partridge in a pear tree.");
+		blue.add("Four calling birds, \n Three French hens, \n Two turtle doves, and \n A partridge in a pear tree.");
+		blue.add(
+				"Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+		blue.add(
+				"Six geese a-laying, \n Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+		blue.add(
+				"Seven swans a-swimming, \n Six geese a-laying, \n Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+		blue.add(
+				"Eight maids a-milking, \n Seven swans a-swimming, \n Six geese a-laying, \n Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+		blue.add(
+				"Nine ladies dancing, \n Eight maids a-milking, \n Seven swans a-swimming, \n Six geese a-laying, \n Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+		blue.add(
+				"Ten lords a-leaping, \n Nine ladies dancing, \n Eight maids a-milking, \n Seven swans a-swimming, \n Six geese a-laying, \n Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+		blue.add(
+				"Eleven pipers piping, \n Ten lords a-leaping, \n Nine ladies dancing, \n Eight maids a-milking, \n Seven swans a-swimming, \n Six geese a-laying, \n Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+		blue.add(
+				"Twelve drummers drumming, \n Eleven pipers piping, \n Ten lords a-leaping, \n Nine ladies dancing, \n Eight maids a-milking, \n Seven swans a-swimming, \n Six geese a-laying, \n Five golden rings, \n Four calling birds, \n Three French hens, \n Two turtle doves, \n and A partridge in a pear tree.");
+
+		for (int i = 0; i < yellow.size(); i++) {
+			System.out.print("On the " + yellow.get(i));
+
+			switch (i) {
+			case 0:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 1:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 2:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 3:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 4:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 5:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 6:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 7:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 8:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 9:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 10:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			case 11:
+				System.out.println(" day of Christmas, \n my true love gave to me \n " + blue.get(i));
+				break;
+			default:
+				System.out.println("There is no Santa Clause!");
+			}
+			System.out.println("\n");
+		}
 	}
 }
