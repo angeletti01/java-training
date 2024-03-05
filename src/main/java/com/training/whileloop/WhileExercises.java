@@ -115,6 +115,65 @@ public class WhileExercises {
 	}
 
 	public void whileGrades() {
+		
+		String sInput = null;
+		boolean x = false;
+		int a=0;
+		int b = 0;
+		int c = 0;
+		int d = 0;
+		int f = 0;
+		int count = 0;
+		while(x != true) {
+		try {
+			System.out.println("How many grades will be entered?");
+			count = s.nextInt();
+			
+		while(count > 0) {
+			System.out.println("Please enter a grade (for example: A,B,C,D,F): ");
+			sInput = s.next().toLowerCase().strip();
+			
+			switch(sInput) {
+			case "a":
+				a++;
+				break;
+			case "b":
+				b++;
+				break;
+			case "c":
+				c++;
+				break;
+			case "d":
+				d++;
+				break;
+			case "f":
+				f++;
+				break;
+				default:
+					System.out.println("Incorrect input!!! ");
+					whileGrades();
+					break;
+			} // end switch
+			count--;
+		} // end lower while
+		System.out.println("A:"+a+" B:"+b+" C:"+c+" D:"+d+" F:"+f);
+		
+		System.out.println("Press X then enter to exit the program:");
+		sInput = s.next();
+		if(sInput.equals("X") || sInput.equals("x")) {
+			System.out.println("Good Bye!");
+			x = true;
+		}
+		else{			
+			x = false;
+		}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			System.exit(0);
+		}		
+		
+		}	// end upper while	
 	}
 
 	public void whileHistogram() {
@@ -128,6 +187,7 @@ public class WhileExercises {
 		WhileExercises w = new WhileExercises();
 
 		//w.thirdOrderPolynomial();
-		w.whileAverage();
+		//w.whileAverage();
+		w.whileGrades();
 	}
 }
