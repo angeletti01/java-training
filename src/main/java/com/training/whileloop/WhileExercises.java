@@ -177,9 +177,32 @@ public class WhileExercises {
 	}
 
 	public void whileHistogram() {
+		int rows = 0;	
+		int rowSave = 0;
+		int columns = 0;
+		int columnSave = 0;
+		
+		System.out.print("Enter number of rows ---> ");
+		rows = s.nextInt();	
+		rowSave = rows;
+		System.out.print("Enter number of columns---> ");
+		columns = s.nextInt();
+		columnSave = columns;
+		
+		while(rows > 0) {
+			System.out.print("*");
+			while(columns > 1) {				
+				System.out.print("*");
+				columns--;
+			}
+			rows--;			
+			columns = columnSave;			
+			System.out.println(" ");
+		}
 	}
 
 	public void whileLargesSmallest() {
+		
 	}
 
 	public static void main(String... args) {
@@ -188,6 +211,7 @@ public class WhileExercises {
 
 		//w.thirdOrderPolynomial();
 		//w.whileAverage();
-		w.whileGrades();
+		//w.whileGrades();
+		w.whileHistogram();
 	}
 }
