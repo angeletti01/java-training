@@ -1,6 +1,9 @@
 package com.training.whileloop;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class WhileExercises {
@@ -201,8 +204,24 @@ public class WhileExercises {
 		}
 	}
 
-	public void whileLargesSmallest() {
-		
+	public void whileLargestSmallest() {
+		int n = 0;
+		List<Integer> nSequence = new ArrayList<>();
+		System.out.println("Enter the amount of numbers in the sequence: ");
+				n = s.nextInt();
+				while(n <= 0) {
+					System.out.println("Cannot choose number less of equal to zero, enter number again..");
+					n = s.nextInt();
+				}
+				while(n > 0) {
+					System.out.print("Enter number in sequence: ");
+					nSequence.add(s.nextInt());
+					System.out.println(" ");
+					n--;
+				}
+				Collections.sort(nSequence);
+				System.out.println("The largest number is: "+ nSequence.get(nSequence.size()-1));
+				System.out.println("The smallest number is: "+ nSequence.get(0));
 	}
 
 	public static void main(String... args) {
@@ -212,6 +231,7 @@ public class WhileExercises {
 		//w.thirdOrderPolynomial();
 		//w.whileAverage();
 		//w.whileGrades();
-		w.whileHistogram();
+		//w.whileHistogram();
+		w.whileLargestSmallest();
 	}
 }
